@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<form role="form" action="/storee" method="post" enctype="multipart/form-data">
+
+<div class="form-group">
+<label for="titre">Titre</label>
+<input type="text" name="titre" class="form-control" placeholder="titre de la photo" required>
+</div>
+
+<div class="form-group">
+    <label for="contenu">Commentaire sur l'image</label>
+    <textarea name="contenu" class="form-control" placeholder="Commentaire sur l'image" rows="3" required></textarea>
+
+    <label for="tag"> international / solitude / Precarité </label>
+    <textarea name="tag" class="form-control" placeholder="catégorie choisie"></textarea>
+
+    <label for="img">Telecharger une image</label>
+    <input type="file" class="form-control-file" name="img">
+
+</div>
+
+<button type="submit" class="btn btn-default">Ajouter </button>
+
+</form>
+
+
+{% endblock %}
+

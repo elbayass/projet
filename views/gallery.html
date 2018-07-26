@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<span class="pull-right"><a class="btn btn-danger remove" href="/destroyy/{{gallery.id}}">Le bouton magique</a></span>
+<span class="pull-right"><a href="/edit-gallery/{{gallery.id}}" class="btn btn-default">Modifier</a></span>
+<div id="Portfolio">
+<div id="js-grid-masonry" class="cbp">
+<div class="cbp-item {{gallery.tags}}"> <a href="{{gallery.img}}" class="cbp-caption cbp-lightbox" data-title="{{gallery.title}}">
+    <div class="cbp-caption-defaultWrap"> <img src="{{gallery.img}}" alt=""> </div>
+</a> 
+<p>titre : {{gallery.title}}</p>
+<p>Commentaire : {{gallery.content}}</p>
+<p>Catégorie : {{gallery.tags}}</p>
+<span class="date">
+Mis à jour {{gallery.updated.getDate()}} / {{gallery.updated.getMonth() +1}} / {{gallery.updated.getFullYear()}}
+</span>
+  </div>
+</div>
+</div>
+
+
+{% endblock %}

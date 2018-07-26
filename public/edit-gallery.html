@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<form role="form" action="/update/{{gallery.id}}" method="post" enctype="multipart/form-data">
+
+<div class="form-group">
+<label for="titre">Titre</label>
+<input type="text" name="titre" value="{{gallery.title}}" class="form-control" placeholder="titre de la photo" required>
+</div>
+
+<div class="form-group">
+    <label for="titre" required>Titre</label>
+    <label for="contenu" required>Commentaire de la photo</label>
+    <textarea name="contenu" class="form-control" placeholder="Commentaire de la photo" rows="3" required> </textarea>
+
+    <label for="img">Telecharger une image</label>
+    <input type="file" class="form-control-file" name="img" required>
+</div>
+
+<button type="submit" class="btn btn-default">Modifier</button>
+
+</form>
+
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+
+<span class="pull-right"><a class="btn btn-danger remove" href="/destroy/{{article.id}}">supprimée</a></span>
+
+
+
+<span class="pull-right"><a href="/edit/{{article.id}}" class="btn btn-default">Modifier</a></span>
+
+<span class="date">
+     Mis à jour {{article.updated.getDate()}} / {{article.updated.getMonth() +1}} / {{article.updated.getFullYear()}}
+</span>
+<div class="row clearfix">
+    <div class="column default-featured-column style-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+        <article class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+        <figure class="image-box"><img src="{{article.img}}" alt="img"></figure>
+        <div class="content-box">
+            <h3><a href="article/{{article.id}}">{{article.title}}</a></h3>
+            <p>{{article.content}}</p>
+            <a href="https://www.lepotcommun.fr/pot/vctxe5ls" class="theme-btn btn-style-pink" data-toggle="modal"> <i class="fa fa-heart-o"></i>Faire un don</a>
+        </div>
+        </article>
+    </div>
+</div>
+
+{% endblock %}

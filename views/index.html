@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>{{title}}</title>
+  <meta name="description" content="Née le 26 octobre 2016 à Gentilly (94). Umanah, a pour 
+  vocation de soutenir et d’accompagner les plus démunis vers une vie stable et sereine dans 
+  différents pays du monde." />
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" sizes="16x16" href="/img/favicon.ico"/>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css"  href="/css/bootstrap.css">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="css/Simple-Line-Icons-Webfont/simple-line-icons.css" media="screen" />
+  <link rel="stylesheet" href="css/et-line-font/et-line-font.css">
+
+  <!-- MENU CSS -->
+  <link rel="stylesheet" href="/css/menuzord.css">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <!-- Prettyphoto-->
+  <link rel="stylesheet" href="/css/prettyphoto.css">
+
+  <!--Master slider-->
+  <link href="/master-slider/style/masterslider.css" rel="stylesheet">
+  <link href="/master-slider/skins/default/style.css" rel="stylesheet">
+
+
+  <!-- OWL STYLE CSS -->
+  <link rel="stylesheet" type="text/css"  href="/css/owl.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" type="text/css"  href="/css/style.css">
+
+  <!-- Responsive -->
+  <link rel="stylesheet" type="text/css"  href="/css/responsive.css">
+
+  <!-- Animate.min -->
+  <link rel="stylesheet" type="text/css"  href="/css/animate.min.css">
+
+  <!-- Revolution Style -->
+  <link rel="stylesheet" type="text/css" href="/revolution/css/settings.css">
+  <link rel="stylesheet" type="text/css" href="/revolution/css/layers.css">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <style>
+    body {
+      padding-top: 50px;
+    }
+    .main{
+      padding-top: 50px;
+    }
+    .ajout{
+      padding-left: 150px;
+    }
+  </style>
+</head>
+
+<body>
+<!-- Preloader start-->
+
+<div id="preloader">
+  <div id="loader"></div>
+</div>
+
+<!-- Preloader end-->
+
+<style>
+    .menu-zindex{
+      z-index: 1000000;
+    }
+  </style>
+  
+  <nav class="navbar navbar-inverse navbar-fixed-top menu-zindex" role="navigation">
+      <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  <span class="sr-only"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/admin">console admin</a>
+          </div>
+      
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul class="nav navbar-nav">
+                  <li class=""><a href="/create">Ajouter un projet</a></li>
+                  <li class=""><a href="/create-gallery">Ajouter une photo dans la gallerie</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+<!-- Nav Bar-->
+
+<nav class="navbar-fixed-top transparrent-bg" style="margin-top: 50px;">
+  <div class="container">
+    <div id="menuzord" class="menuzord red"> <a href="index.html" class="menuzord-brand"><img class="changeable" src="img/logo_dark.png" alt=""></a>
+      <ul class="menuzord-menu mp_menu">
+        <li class="active"><a href="/">ACCUEIL</a></li>
+
+        <li><a href="about.html">Qui sommes nous </a></li>
+
+        <li><a>NOS ACTIONS</a>
+          <ul class="dropdown">
+            <li><a>#Pôle international</a>
+              <ul class="dropdown">
+                <li><a href="raleymbedi.html">#Raley mbedy</a></li>
+                <li><a href="eaumone.html">#Eaumone</a></li>
+              </ul>
+            </li>
+            <li><a href="solitude.html">#Pôle lutte contre la solitude </a>
+              <ul class="dropdown">
+                <li><a href="maison-retraite.html">#Visite en maison de retraite</a></li>
+                <li><a href="enfants-malades.html">#Pour le sourire d'un enfant</a></li>
+              </ul>
+            </li>
+            <li><a href="precarite.html">#Pôle lutte contre la précarité</a>
+              <ul class="dropdown">
+                <li><a href="colis-solidaire.html">#Colis alimentaire</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="causes.html">NOS PROJETS</a></li>
+
+        <li><a href="events.html">Evenements</a></li>
+
+        <li><a href="selfie">Galerie</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+        <li style="height: 1px" class="scrollable-fix"></li>
+      </ul>
+      <div class="right_mp_menu"> <a href="https://www.paypal.me/AssociationUmanah" class="theme-btn btn-style-pinks-nav" ><i class="fa fa-heart-o"></i> Faire un don</a> </div>
+    </div>
+  </div>
+</nav>
+
+<!-- END Nav Bar -->
+
+<!-- ***************************** Slider mobile ************************************ -->
+
+ <div class="containerr ">
+    <div class="row">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/Eaumone/1.jpg" alt="First slide">
+               <div class="carousel-caption"></div>
+            </div>
+            <div class="item">
+              <img src="img/precarité/16.jpg" alt="Second slide">
+              <div class="carousel-caption">
+              </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <span class="glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+<!-- ************************** END Slider mobile ************************************* -->
+
+
+
+<!-- Revolution Slider -->
+<div class="revv-sliderr"id="rev-slider">
+  <div id="rev_slider_46_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="notgeneric1" style="background-color:transparent;padding:0; ">
+    <!-- START REVOLUTION SLIDER 5.0.7 fullscreen mode -->
+    <div id="rev_slider_46_1" class="rev_slider fullscreenbanner" style=" padding:0; " data-version="5.0.7">
+      <ul>
+        <!-- SLIDE  -->
+        <li data-index="rs-151" data-transition="zoomout" data-slotamount="default"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-rotate="0"  data-saveperformance="off"  data-title="Iceberg" data-description="">
+          <!-- LAYERS -->
+          <!-- BACKGROUND VIDEO LAYER -->
+          <div class="rs-background-video-layer"
+									data-forcerewind="on"
+									data-volume="mute"
+									data-videowidth="100%"
+									data-videoheight="100%"
+									data-videomp4="videos/girls.mp4"
+									data-videopreload="preload"
+									data-videoloop="loopandnoslidestop"
+									data-forceCover="1"
+									data-aspectratio="16:9"
+									data-autoplay="true"
+									data-autoplayonlyfirsttime="false"
+                  data-nextslideatend="true">
+            </div>
+
+
+          <div class="text-con-i low-back-up">
+              <div class="container text-center">
+                <div class="row">
+                  <div class="lead col-lg-12 col-xm-12 ">
+                    <div class="lead col-lg-8 col-sm-offset-0 col-lg-offset-2 col-xm-8 text-center ">
+                      <div class="newsletter text-center">
+                        <div class="top-heading-soon">POUR UN MONDE MEILLEUR</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <div class="tp-caption rev-scroll-btn  rs-parallaxlevel-0"
+									 id="slide-156-layer-6"
+									 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+									 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['50','50','50','50']"
+									data-width="35"
+									data-height="55"
+									data-whitespace="nowrap"
+									data-transform_idle="o:1;"
+									data-style_hover="cursor:pointer;"
+									 data-transform_in="y:50px;opacity:0;s:1500;e:Power3.easeInOut;"
+									 data-transform_out="y:50px;opacity:0;s:1000;s:1000;"
+									data-start="2000"
+									data-splitin="none"
+									data-splitout="none"
+									data-basealign="slide"
+									data-responsive_offset="true"
+									data-responsive="true"
+                  style="z-index: 10; min-width: 35px; max-width: 35px; max-width: 55px; max-width: 55px; white-space: nowrap; font-size: px; line-height: px; font-weight: 100;border-color:rgba(255, 255, 255, 0.50);border-style:solid;border-width:1px;border-radius:23px 23px 23px 23px;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;"> <span> </span>
+          </div>
+        </li>
+      </ul>
+      <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+    </div>
+  </div>
+</div>
+
+
+<!--Main Features-->
+
+<div class="main-features">
+  <div class="container">
+    <div class="section-title center">
+        <h2><span class="pink">UMANAH : </span><strong>Soyons Bénévoles du Monde</strong></h2><br>
+      <hr>
+      <p class="para">Née le 26 octobre 2016 à Gentilly (94). Umanah, a pour vocation de soutenir
+        et d’accompagner les plus démunis vers une vie stable et sereine dans différents pays du monde.
+        Après un voyage au Mali, le président a été témoin d’un manque considérable dans divers domaines
+        (éducation, santé, maltraitance, ..). La précarité, les inégalités ont nourri le désir de changer les
+        choses, de s’investir concrètement. Une vraie volonté de nos jeunes bénévoles de répondre aux besoins de ceux
+        qui souffrent. Une équipe qui ne demande qu’à s’agrandir…
+      </p>
+    </div>
+    <div class="row clearfix">
+
+
+      <!--Default Icon Column-->
+      <div class="default-icon-column col-lg-4 col-sm-6 col-xs-12">
+        <article class="inner-box">
+          <div class="icon-box">
+            <div class="ico"> <span class="icon-lightbulb"></span></div>
+          </div>
+          <h3 class="text-center">RESPONSABLE</h3>
+          <p>Un autre concept de responsabilité qui ne concerne pas le calcul de ce qui a ete fait,
+             mais la détermination de ce qui est à faire. En ce sens <strong>Umanah</strong> s'engage 
+             à être responsable collectivement et agir afin de venir en aide aux communautés du monde.
+            </p>
+        </article>
+      </div>
+
+
+      <!--Default Icon Column-->
+      <div class="default-icon-column col-lg-4 col-sm-6 col-xs-12">
+        <article class="inner-box">
+          <div class="icon-box">
+            <div class="ico"> <span class="icon-happy"></span></div>
+          </div>
+          <h3 class="text-center">ENSEMBLE</h3>
+          <p>"Se réunir  est un début, rester ensemble est un progrès, travailler ensemble est la réussite" (Henry Ford)
+            <br>Toutes les actions sont construites avec un réseau de partenaires, associatifs, institutionnels afin d’organiser 
+            au mieux les interventions et permettre d’atteindre l’objectif: "Vie stable et sereine Ensemble"</p>
+        </article>
+      </div>
+
+
+      <!--Default Icon Column-->
+      <div class="default-icon-column col-lg-4 col-sm-12 col-xs-12">
+        <article class="inner-box">
+          <div class="icon-box">
+            <div class="ico"> <span class="icon-heart"></span></div>
+          </div>
+          <h3 class="text-center">VALEURS</h3>
+          <p>C'est le debut d'une nouvelle réalité :<br>
+            «Soyons Bénévole du Monde» en ressemblant les valeurs
+             telles que la compassion, l'entraide, la solidarité, la transparence tout en étant le garant des dépôts.
+            Donnons pas seulement pour donner mais pour construire afin que le relais puisse être passer comme un mouvement
+          perpétuel.
+        </p>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- END Features -->
+
+
+<!--Recent Case -->
+
+<div class="events-section latest-events">
+  <div class="container">
+    <div class="section-title center">
+      <h2 style="color: #00BCCC">Nos<strong> Projets</strong></h2>
+      <hr>
+    </div>
+
+     <div class="row clearfix">
+            {% block content %}
+
+            {% for article in articles %}
+                <div class="column default-featured-column style-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <article class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <figure class="image-box"><img src="{{article.img}}" alt="img"></figure>
+                    <div class="content-box">
+                        <h3><a href="article/{{article.id}}">{{article.title}}</a></h3>
+                        <p>{{article.content}}</p>
+                        <a href="https://www.lepotcommun.fr/pot/vctxe5ls" class="theme-btn btn-style-pink" data-toggle="modal"> <i class="fa fa-heart-o"></i>Faire un don</a>
+                    </div>
+                    </article>
+                </div>
+           {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+<!-- END Recent Case -->
+
+<!-- Achivement  -->
+
+<div id="achivements" class="text-center ">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="row">
+          <div class="col-md-3 col-sm-3">
+            <div class="achivement-box">
+              <div class="ico"> <span class="icon-trophy"></span></div>
+              <span class="count">11</span>
+              <h4>Projets aboutis</h4>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3">
+            <div class="achivement-box">
+              <div class="ico"> <span class="icon-megaphone"></span> </div>
+              <span class="count">32 000 €</span>
+              <h4>recoltés en 2017</h4>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3">
+            <div class="achivement-box">
+              <div class="ico"> <span class="icon-happy"></span> </div>
+              <span class="count">2000</span>
+              <h4>Bénéficiaires en 2017</h4>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3">
+            <div class="achivement-box">
+              <div class="ico"> <span class="icon-user"></span> </div>
+              <br>
+              <span class="count">20</span>
+              <h4>Bénévoles actifs</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Achivement  -->
+
+<!--Events -->
+<!-- a ajouter plus tard inchallah-->
+<!-- End Events  -->
+
+<div id="about-working" class="text-center ">
+  <div class=" container-fluid">
+    <div class="row">
+      <div class="col-md-5 col-sm-12 working no-pad img-responsive ">
+        <div class="lead  col-sm-12 col-xm-12 text-center ">
+          <div class="video-about">
+            <div class="about-buttons-2">
+              <a href="https://www.youtube.com/watch?v=3g1feX1fNlI&t=1s" class="prettyphoto  btn text-center">
+                <i class="fa fa-play"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7 col-sm-12 no-pad">
+        <div class="benefit-text no-pad">
+          <div class="col-md-12 col-sm-12  no-pad">
+            <!--Nav Tab-->
+            <div class="tab-wrap">
+                <h1>Nous  <span class="pink"><strong>Soutenir ?</strong></span></h1>
+
+              <div class="media">
+                <div class="parrent pull-left">
+                  <ul class="nav nav-tabs nav-stacked">
+                    <li class="active"><a href="#tab1" data-toggle="tab" class="analistic-01"><i class="fa fa-search"></i> FAIRE UN DON</a></li>
+                    <!-- <li class=""><a href="#tab2" data-toggle="tab" class="analistic-02"> <i class="fa fa-heart"></i> DEVENIR PARRAIN</a></li> -->
+                    <li class=""><a href="#tab3" data-toggle="tab" class="tehnical"><i class="fa fa-pencil "></i>S'ÉPANOUIR</a></li>
+                    <li class=""><a href="#tab4" data-toggle="tab" class="tehnical"><i class="fa fa-coffee"></i> S'INFORMER </a></li>
+                    <li class=""><a href="#tab5" data-toggle="tab" class="tehnical"><i class="fa fa-life-ring"></i> RÉSEAUX SOCIAUX</a></li>
+                  </ul>
+                </div>
+                <div class="parrent media-body">
+                  <div class="tab-content">
+                    <div class="tab-pane fade active in" id="tab1">
+                      <div class="media">
+                        <div class="media-body">
+                          <div class="list-o">
+                              <h3>Paypal</h3>
+                              <p>Un simple clic sur le bouton ci-dessous pour être redirigé vers notre page paypal. </p>
+                              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="N4FS33FANVLJE">
+                                <input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal, le réflexe sécurité pour payer en ligne">
+                                <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+                                </form>
+                              <hr/>
+                              <h4>Virements</h4>
+                             <p style="color:black;background: #00BCCC;">Nom de la banque : Crédit Mutuel<br>
+                                Domiciliation : CCM Le Kremlin Bicetre Gentilly<br>
+                                Titulaire du compte : Umanah -<br>
+                                 Banque : 10278 - Guichet : 06163 <br>
+                                Numéro de compte : 00020491501 - Clé RIB : 84<br>
+                                Iban : FR76 1027 8061 6300 0204 9150 184
+                              </p>
+                              <hr/>
+                              <h4>CHEQUE</h4>
+                              <p>A l'ordre de : Umanah<br>
+                                A envoyer à l'adresse : Adama WARR <br>
+                                2 Avenue du Chaperon-Vert Bâtiment HW2<br>
+                                94250 GENTILLY
+                              </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="tab-pane fade " id="tab2">
+                      <div class="media">
+                        <div class="media-body">
+                          <div class="list-o">
+                            <h4>DEVENIR PARRAIN</h4>
+                            <hr/>
+                            <p>Vous trouverez le formulaire de parrainage ci-dessous qui vous engage à faire une bonne action chaque mois.
+                                7 €= 1 enfant qui ne mendiera plus pendant un mois.<br>
+                                Le formulaire est à imprimer puis à renvoyer complété à
+                                l'attention de Monsieur WARR Adama à l'adresse suivante : </p>
+                                <ul>
+                                    <li><i class="fa fa-arrow-right"></i> - 2 cite du Chaperon Vert 2 eme avenue Bâtiment HW2 94250 GENTILLY </li>
+
+                                    <li><i class="fa fa-arrow-right"></i><a href="UMANAH.pdf" style="color:black">Cliquez ici pour télécharger le formulaire</a></li>
+                                </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+                    <div class="tab-pane fade" id="tab3">
+                      <div class="media-body">
+                        <div class="list-o">
+                          <h4>S'ÉPANOUIR PERSONNELLEMENT</h4>
+                          <hr/>
+                          <p>S’engager ne doit pas être un poids mais un épanouissement personnel et pleins de moments de joie.
+                            C’est ensemble que l’on peut marquer le monde et même avec le peu dont on dispose. Le tout c’est de
+                            le rendre meilleur et aider ceux qui ont été et qui sont éprouvés.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab4">
+                      <div class="media-body">
+                        <div class="list-o">
+                          <h4>S'INFORMER</h4>
+                          <hr/>
+                          <p>Nous restons accessible à tous moment afin de répondre
+                             à vos questions via ce numéro de téléphone : </p>
+                          <ul>
+                            <li style="color:black;background: #00BCCC;"> <i class="fa fa-arrow-right"></i> 06 24 23 48 48</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab5">
+                      <div class="media-body">
+                        <div class="list-o">
+                          <h4> RÉSEAUX SOCIAUX</h4>
+                          <hr/>
+                          <p>Vous avez la possibilité de suivre nos différents projets via les réseaux sociaux.
+                            Le simple fait de "like" une page, partagez nos évènements, est déjà une aide incommensurable
+                            pour nous. </p>
+                          <ul>
+                            <li> <i class="fa fa-arrow-right"></i>Facebook : <a href="https://www.facebook.com/Asso.Umanah" style="color: blue; text-decoration:underline">https://www.facebook.com/Asso.Umanah</a></li>
+                            <li><i class="fa fa-arrow-right"></i>Insta :  <a href="https://www.instagram.com/asso.umanah/" style="color: blue; text-decoration:underline">https://www.instagram.com/asso.umanah/</a></li>
+                            <li><i class="fa fa-arrow-right"></i>Twitter : <a href="https://www.twitter.com/asso_umanah/" style="color: blue; text-decoration:underline"> https://www.twitter.com/asso_umanah/</a></li>
+                            <li><i class="fa fa-arrow-right"></i>Snapchat :<img src="img/snapchat.jpg" width="100px" height="100px" style="padding-left: 5px;"/></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/.tab-content-->
+                </div>
+                <!--/.media-body-->
+              </div>
+              <!--/.media-->
+            </div>
+            <!-- END Nav Tab -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Volunteer Heading -->
+<div class="bg-donation ">
+    <div class="text-con-app  low-back-up">
+      <div class="container">
+        <div class="row">
+          <div class="lead col-lg-6 col-lg-offset-3 col-xm-offset-0 col-xm-12 text-center donation-back ">
+            <div class="donation-text"><span class="small-do">Devenir</span> <br>
+              <strong>Bénévole</strong>
+            <p>Comme toute association, il faut des moyens humains et financiers pour pouvoir agir et répondre à l’appel des plus démunis.
+              Si vous souhaitez nous aider, nous avons besoin de bénévoles pour la confection de colis alimentaires, la recherche de partenaires et
+              l’organisation d’évènements solidaires. Mettez votre coeur à contribution, n’hésitez plus!</p> </div>
+
+            <a href="contact.html" class="theme-btn btn-style-pinks">Nous rejoindre ? </a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Volunteer -->
+
+
+<!--Testimonials-->
+<div class="testimonials-section style-two">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Petit message de nos <strong> Donateurs :)</strong></h2>
+      <hr>
+    </div>
+
+    <!--Slider-->
+    <div class="testimonials-slider testimonials-carousel">
+
+      <!--Slide-->
+      <article class="slide-item">
+        <div class="info-box">
+      <!--<figure class="image-box"><img src="img/t-1.jpg" alt=""></figure>-->
+          <h3>LaBoss TuCoco </h3>
+          <p class="designation"></p>
+        </div>
+        <div class="slide-text">
+          <div class="testimonials-s">Umanah? <br> "Sah quand on voit des comptes humanitaires comme ça
+          on se dit que le "coeur" humain est toujours présent, barak'Allah u fikoum a vous les personnes
+          qui viennent en aide aux nécéssiteux, vous êtes formidables, je parle pas seulement de Umanah
+          mais de touuuuutes les personnes qui font la démarche d'aller aider , toutes les associations
+          qui permettent de grandes choses, chaque aide est preuve que ce monde n'est pas seulement rempli
+          de haineux ou meme de profiteurs etc..., inshAllah j'attend votre site officiel,
+          qu'Allah vous protège et vous facilite, qu'Allah nous facilite tous"</div>
+        </div>
+      </article>
+
+      <!--Slide-->
+      <article class="slide-item">
+        <div class="info-box">
+          <h3>Naila Mertah</h3>
+          <p class="designation"></p>
+        </div>
+        <div class="slide-text">
+          <div class="testimonials-s">"Umanah est ma plus belle leçon de vie je crois,
+            chaque soir en regardant vos snap je me dit Al hamdoulileh,et chaque fois que
+            je regarde vos snap dans la journée ca m'empeche
+            de me plaindre sur tellement de chose de la vie..."</div>
+        </div>
+      </article>
+
+      <!--Slide-->active
+      <article class="slide-item">
+        <div class="info-box">
+          <h3>Monia Boumediene</h3>
+          <p class="designation"></p>
+        </div>
+        <div class="slide-text">
+          <div class="testimonials-s">"Association sérieuse et qui communique beaucoup (photos, vidéos et factures a l'appui)
+            bien plus qu'une asso c'est une team et une famille dont tout le monde peut être membre et acteur"</div>
+        </div>
+      </article>
+
+      <!--Slide-->
+      <article class="slide-item">
+        <div class="info-box">
+          <h3>Lina </h3>
+          <p class="designation">17 ans, Marseille</p>
+        </div>
+        <div class="slide-text">
+          <div class="testimonials-s">"Une association avec le coeur sur la main"</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+
+<!--END Testimonials-->
+
+<div class="footer-section-area padding-top-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                 <div class="text-center"><a href="index.html" class="menuzord-brand"><img src="img/logo-2.png" alt="#"></a></div>
+          <div class="clearfix"></div>
+          <p class="white">Née le 26 octobre 2016 à Gentilly (94). Umanah, a pour vocation de soutenir
+              et d’accompagner les plus démunis vers une vie stable et sereine dans différents pays du monde.</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="title">
+            <h3>CONTACT</h3>
+          </div>
+          <div class="information">
+              <ul>
+                  <li><a href="https://www.google.fr/maps/search/WARR+Adama++2+avenue+Chaperon+Vert+B%C3%A2timent+HW+Escalier+2++94250+Gentilly/@48.8111109,2.3326815,17z/data=!3m1!4b1?hl=en"> <i class="fa fa-map-marker fa-2x"></i>WARR Adama 2 avenue Chaperon Vert<br> Bâtiment HW Escalier 2 94250 Gentilly</a></li>
+                  <li><a href="contact.html"><i class="fa fa-envelope-o fa-2x"></i>contact@umanah.fr</a></li>
+                  <li><a><i class="fa fa-phone fa-2x"></i>0624234848</a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="title">
+            <h3>JE FAIS UN DON</h3>
+          </div>
+          <div class="popular-post">
+            <ul>
+                <li>
+                    <a href="https://www.paypal.me/AssociationUmanah" class="theme-btn btn-style-pinks-nav" ><i class="fa fa-heart-o"></i> Faire un don</a>
+                </li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Copyright Start  -->
+
+<div class="copy-right-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+          <div class="copy-right">
+            <p>Association Umanah © 2018. Tous droits réservés.</p>
+            <!-- <p>author: YASSINE EL BAHLOUSSI</p> -->
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="social-media">
+            <ul>
+              <li><a href="https://www.facebook.com/Asso.Umanah"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="https://twitter.com/asso_umanah/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.instagram.com/asso.umanah/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <!-- <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Copyright -->
+
+<!-- Back to Top -->
+<a href="#" id="back-to-top" title="Back to top"><img src="img/top-arrow.png" alt=""></a>
+
+
+
+<!-- js file  -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+  <!-- Bootstrap JS  -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+  <!-- Prettyphoto JS  -->
+  <script type="text/javascript" src="js/jquery.prettyphoto.js"></script>
+
+  <!-- Menu JS  -->
+  <script type="text/javascript" src="js/menuzord.js"></script>
+
+  <!-- OWL JS  -->
+  <script type="text/javascript" src="js/owl.js"></script>
+
+  <!-- Easypiechart JS  -->
+  <script type="text/javascript" src="js/easypiechart.js"></script>
+
+  <!--master slider-->
+  <script src="master-slider/js/masterslider.min.js"></script>
+
+  <script type="text/javascript" src="js/main.js"></script>
+
+  <!-- REVOLUTION JS FILES -->
+  <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
+  <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+
+  <!-- SLIDER REVOLUTION 5.0 EXTENSIONS    -->
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+  <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+   <script>
+        var tpj=jQuery;
+            var revapi46;
+            tpj(document).ready(function() {
+              if(tpj("#rev_slider_46_1").revolution == undefined){
+                revslider_showDoubleJqueryError("#rev_slider_46_1");
+              }else{
+                revapi46 = tpj("#rev_slider_46_1").show().revolution({
+                  sliderType:"standard",
+                  jsFileLocation:"revolution/js/",
+                  sliderLayout:"fullscreen",
+                  dottedOverlay:"none",
+                  delay:9000,
+                  navigation: {
+                    keyboardNavigation:"on",
+                    keyboard_direction: "horizontal",
+                    mouseScrollNavigation:"off",
+                    onHoverStop:"off",
+                    touch:{
+                      touchenabled:"on",
+                      swipe_threshold: 75,
+                      swipe_min_touches: 1,
+                      swipe_direction: "horizontal",
+                      drag_block_vertical: true
+                    },
+                        bullets: {
+                    enable: true,
+                                      hide_onmobile: false,
+                                      hide_under: 800,
+                                      style: "zeus",
+                                      hide_onleave: false,
+                                      direction: "horizontal",
+                                      h_align: "center",
+                                      v_align: "bottom",
+                                      h_offset: 0,
+                                      v_offset: 30,
+                                      space: 5,
+                    }
+
+                  },
+                  responsiveLevels:[1240,1024,768,480],
+                  visibilityLevels:[1240,1024,778,480],
+                  gridwidth:[1240,1024,778,480],
+                  gridheight:[868,768,960,720],
+                  lazyType:"none",
+                  parallax: {
+                    type:"mouse",
+                    origo:"slidercenter",
+                    speed:2000,
+                    levels:[2,3,4,5,6,7,12,16,10,50],
+                    disable_onmobile:"on"
+                  },
+                  shadow:0,
+                spinner: "off",
+                              stopLoop: "off",
+                              stopAfterLoops: -1,
+                              stopAtSlide: -1,
+                  shuffle:"off",
+                  autoHeight:"off",
+                  fullScreenAlignForce:"off",
+                  fullScreenOffsetContainer: "",
+                  fullScreenOffset: "0px",
+                  disableProgressBar:"on",
+                  hideThumbsOnMobile:"on",
+                  hideSliderAtLimit:0,
+                  hideCaptionAtLimit:0,
+                  hideAllCaptionAtLilmit:0,
+                  debugMode:false,
+                  fallbacks: {
+                    simplifyAll:"off",
+                    nextSlideOnWindowFocus:"off",
+                    disableFocusListener:false,
+                  }
+                });
+              }
+            });
+
+</script>
+</body>
+</html>

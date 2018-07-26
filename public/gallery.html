@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<span class="pull-right"><a class="btn btn-danger remove" href="/destroy/{{gallery.id}}">Le bouton magique</a></span>
+<span class="pull-right"><a href="/edit-gallery/{{gallery.id}}" class="btn btn-default">Modifier</a></span>
+
+<span class="date">
+     Mis à jour {{gallery.updated.getDate()}} / {{gallery.updated.getMonth() +1}} / {{gallery.updated.getFullYear()}}
+</span>
+<div class="row clearfix">
+    <div class="column default-featured-column style-two col-lg-4 col-md-6 col-sm-6 col-xs-12">
+        <article class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+        <figure class="image-box"><img src="{{gallery.img}}" alt="img"></figure>
+        <div class="content-box">
+            <h3><a href="gallery/{{gallery.id}}">{{gallery.title}}</a></h3>
+            <p>{{gallery.content}}</p>
+            <a href="https://www.lepotcommun.fr/pot/vctxe5ls" class="theme-btn btn-style-pink" data-toggle="modal"> <i class="fa fa-heart-o"></i>Faire un don</a>
+        </div>
+        </article>
+    </div>
+</div>
+
+{% endblock %}

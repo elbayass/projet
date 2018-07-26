@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title>{{title}}</title>
+  <meta name="description" content="Née le 26 octobre 2016 à Gentilly (94). Umanah, a pour 
+  vocation de soutenir et d’accompagner les plus démunis vers une vie stable et sereine dans 
+  différents pays du monde." />
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" sizes="16x16" href="img/favicon.ico"/>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="css/Simple-Line-Icons-Webfont/simple-line-icons.css" media="screen" />
+  <link rel="stylesheet" href="css/et-line-font/et-line-font.css">
+
+  <!-- MENU CSS -->
+  <link rel="stylesheet" href="css/menuzord.css">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" type="text/css"  href="css/style.css">
+
+  <!-- Responsive -->
+  <link rel="stylesheet" type="text/css"  href="css/responsive.css">
+
+  <!-- Animate.min -->
+  <link rel="stylesheet" type="text/css"  href="css/animate.min.css">
+
+  <!-- Cubeportfolio -->
+  <link rel="stylesheet" type="text/css" href="css/cubeportfolio.min.css">
+
+  
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <style>
+    body {
+      padding-top: 50px;
+    }
+    .main{
+      padding-top: 50px;
+    }
+    .ajout{
+      padding-left: 150px;
+    }
+  </style>
+</head>
+
+<body>
+<!--preloader start-->
+<div id="preloader">
+  <div id="loader"></div>
+</div>
+<!--preloader end-->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">ACCUEIL</a>
+        <a class="navbar-brand ajout"href="/create">Ajouter un projet</a>
+        <a class="navbar-brand ajout"href="/create-gallery">Ajouter une photo dans la gallerie</a>
+      </div>
+    </div>
+  </div>
+
+<!-- Nav Bar-->
+
+<nav class="navbar-fixed-top transparrent-bg" style="margin-top: 50px;">
+  <div class="container">
+    <div id="menuzord" class="menuzord red"> <a href="index.html" class="menuzord-brand"><img class="changeable" src="img/logo-2.png" alt=""></a>
+      <ul class="menuzord-menu mp_menu">
+        <li><a href="/">ACCUEIL</a></li>
+
+        <li><a href="about.html">Qui sommes nous </a></li>
+
+        <li><a>NOS ACTIONS</a>
+          <ul class="dropdown">
+            <li><a>#Pôle international</a>
+              <ul class="dropdown">
+                <li><a href="raleymbedi.html">#Raley mbedy</a></li>
+                <li><a href="eaumone.html">#Eaumone</a></li>
+              </ul>
+            </li>
+            <li><a href="solitude.html">#Pôle lutte contre la solitude </a>
+              <ul class="dropdown">
+                <li><a href="maison-retraite.html">#Visite en maison de retraite</a></li>
+                <li><a href="enfants-malades.html">#Pour le sourire d'un enfant</a></li>
+              </ul>
+            </li>
+            <li><a href="precarite.html">#Pôle lutte contre la précarité</a>
+              <ul class="dropdown">
+                <li><a href="colis-solidaire.html">#Colis alimentaire</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="causes.html">NOS PROJETS</a></li>
+
+        <li><a href="events.html">Evenements</a></li>
+
+        <li class="active"><a href="selfie">Galerie</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+        <li style="height: 1px" class="scrollable-fix"></li>
+      </ul>
+      <div class="right_mp_menu"> <a href="https://www.paypal.me/AssociationUmanah" class="theme-btn btn-style-pinks-nav" ><i class="fa fa-heart-o"></i> Faire un don</a> </div>
+    </div>
+  </div>
+</nav>
+
+<!-- END Nav Bar -->
+
+<!-- Header -->
+<div id="home" class="bg-inner low-back-gradient-inner">
+     <div class="text-con-inner low-back-up">
+          <div class="container">
+               <div class="row">
+                    <div class="lead col-lg-12 col-xm-12 text-center">
+                         <h1><span class="top-heading-inner">Galerie</span></h1>
+
+                    </div>
+               </div>
+          </div>
+     </div>
+</div>
+<!-- END Header -->
+
+<!-- Pagenation -->
+<div class="pagenation-holder">
+     <div class="container">
+          <div class="row">
+               <div class="col-md-6 text-left">
+                    <div class="pagenation_links"><a href="index.html">Accueil</a><i> / </i> Galerie</div>
+               </div>
+               <div class="col-md-6"> </div>
+          </div>
+     </div>
+</div>
+<!-- END Pagenation -->
+
+<!-- Portfolio  -->
+<div id="Portfolio">
+     <!-- Container -->
+     <div class="container">
+          <div class="section-title center">
+               <h2>Nos <strong>Photos</strong></h2>
+               <hr>
+          </div>
+          <div id="js-filters-masonry" class="cbp-l-filters-alignRight">
+               <div data-filter="*" class="cbp-filter-item-active cbp-filter-item"> TOUT
+                    <div class="cbp-filter-counter"></div>
+               </div>
+               <div data-filter=".international" class="cbp-filter-item">Pôle international
+                    <div class="cbp-filter-counter"></div>
+               </div>
+               <div data-filter=".solitude" class="cbp-filter-item">Lutte contre la solitude
+                    <div class="cbp-filter-counter"></div>
+               </div>
+               <div data-filter=".Precarité" class="cbp-filter-item">Lutte contre la précarité
+                    <div class="cbp-filter-counter"></div>
+               </div>
+          </div>
+      </div>
+          <div id="js-grid-masonry" class="cbp">
+            {% block content %}
+            {% for gallery in galleryy %}
+            <div class="cbp-item {{gallery.tags}}"> <a href="/gallery/{{gallery.id}}">
+              <div class="cbp-caption-defaultWrap"> <img src="{{gallery.img}}" alt=""> </div>
+                <div class="cbp-caption-activeWrap">
+                    <div class="cbp-l-caption-alignCenter"> 
+                          <div class="cbp-l-caption-body">
+                              <div class="cbp-l-caption-title">{{gallery.title}}</div>
+                              <div class="cbp-l-caption-desc">{{gallery.content}}</div>
+                          </div>
+                    </div>
+                </div>
+                </a> 
+              </div>
+              {% endfor %}
+          </div>
+
+     </div>
+<!-- Portfolio-End  -->
+
+
+<div class="footer-section-area padding-top-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                 <div class="text-center"><a href="index.html" class="menuzord-brand"><img src="img/logo-2.png" alt="#"></a></div>
+          <div class="clearfix"></div>
+          <p class="white">Née le 26 octobre 2016 à Gentilly (94). Umanah, a pour vocation de soutenir
+              et d’accompagner les plus démunis vers une vie stable et sereine dans différents pays du monde.</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="title">
+            <h3>CONTACT</h3>
+          </div>
+          <div class="information">
+              <ul>
+                  <li><a href="https://www.google.fr/maps/search/WARR+Adama++2+avenue+Chaperon+Vert+B%C3%A2timent+HW+Escalier+2++94250+Gentilly/@48.8111109,2.3326815,17z/data=!3m1!4b1?hl=en"> <i class="fa fa-map-marker fa-2x"></i>WARR Adama 2 avenue Chaperon Vert<br> Bâtiment HW Escalier 2 94250 Gentilly</a></li>
+                  <li><a href="contact.html"><i class="fa fa-envelope-o fa-2x"></i>contact@umanah.fr</a></li>
+                  <li><a><i class="fa fa-phone fa-2x"></i>0624234848</a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="title">
+            <h3>JE FAIS UN DON</h3>
+          </div>
+          <div class="popular-post">
+            <ul>
+                <li>
+                    <a href="https://www.paypal.me/AssociationUmanah" class="theme-btn btn-style-pinks-nav" ><i class="fa fa-heart-o"></i> Faire un don</a>
+                </li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Copyright Start  -->
+
+<div class="copy-right-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+          <div class="copy-right">
+            <p>Association Umanah © 2018. Tous droits réservés.</p>
+            <!-- <p>author: YASSINE EL BAHLOUSSI</p> -->
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <div class="social-media">
+            <ul>
+              <li><a href="https://www.facebook.com/Asso.Umanah"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="https://twitter.com/asso_umanah/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.instagram.com/asso.umanah/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <!-- <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Copyright -->
+
+
+
+<!-- Back to Top -->
+<a href="#" id="back-to-top" title="Back to top"><img src="img/top-arrow.png" alt=""></a>
+
+<!-- js file  -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<!-- load cubeportfolio  -->
+<script type="text/javascript" src="js/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/jquery.cubeportfolio.min.js"></script>
+<script type="text/javascript" src="js/main-portfolio.js"></script>
+
+<!-- Bootstrap JS  -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+
+<!-- Menu JS  -->
+<script type="text/javascript" src="js/menuzord.js"></script>
+
+<!-- OWL JS  -->
+<script type="text/javascript" src="js/owl.js"></script>
+
+<!-- Counterup JS  -->
+<script type="text/javascript" src="js/jquery.counterup.js"></script>
+
+<!-- Easypiechart JS  -->
+<script type="text/javascript" src="js/easypiechart.js"></script>
+
+<!--jqBootstrapValidation js file-->
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+
+<!-- main js -->
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
