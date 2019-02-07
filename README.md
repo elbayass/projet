@@ -1,4 +1,4 @@
-# projet
+# Projet
 
 _Création d'un blog en local qui peut créer, modifier ou supprimer un
 article ou une photo.
