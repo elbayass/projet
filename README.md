@@ -1,5 +1,10 @@
 # Projet
 
+
+git clone https://github.com/elbayass/projet
+
+
+
 _Création d'un blog en local qui peut créer, modifier ou supprimer un
 article ou une photo.
 
